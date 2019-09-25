@@ -25,7 +25,7 @@ public class TestPrueba {
     Thread hilo3 = new Thread();
     
     
-    hilo1.start();   
+    hilo1.start();
     hilo2.start();
     hilo3.start();
     
