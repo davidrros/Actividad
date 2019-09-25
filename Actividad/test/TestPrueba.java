@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 
+import actividad.hilo1;
+import actividad.hilo2;
+import actividad.hilo3;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -20,14 +23,15 @@ public class TestPrueba {
     @Test
     public void prueba() {
     
-    Thread hilo1 = new Thread();
-    Thread hilo2 = new Thread();
-    Thread hilo3 = new Thread();
+        
+     hilo1 n = new hilo1();
+     hilo2 y = new hilo2();
+     hilo3 g= new hilo3();
     
     
-    hilo1.start();
-    hilo2.start();
-    hilo3.start();
+  n.start();
+  y.start();
+  g.start();
     
     
     
