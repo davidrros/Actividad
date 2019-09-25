@@ -31,7 +31,7 @@ public abstract class HiloCrearFichero {
         FileWriter fich = null;
         try {
             fich = new FileWriter(rutaFichero, false);
-            for (int i = 0; i < 100000; i++) {
+            for (int i = 0; i < 10000000; i++) {
                 if (r.nextInt(3) == 0) {
                     fich.write(palabras[r.nextInt(palabras.length-1)]);
                 }
@@ -64,7 +64,7 @@ public abstract class HiloCrearFichero {
             escaner = new Scanner(fich);
             while(escaner.hasNext()){
                 String linea = escaner.nextLine();
-                System.out.println(this.quitarEspaciosBlancos(linea));
+                quitarEspaciosBlancos(linea);
             }
         }catch(Exception e){
             System.out.println("Error: "+ e.getMessage());

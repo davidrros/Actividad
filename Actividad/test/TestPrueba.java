@@ -34,9 +34,7 @@ public class TestPrueba {
 
         n.join();
         y.join();
-        g.join();
-    
-     
+        g.join();    
     }
    
     @Test
@@ -45,7 +43,7 @@ public class TestPrueba {
         
         long  tiempoHilos = new Date().getTime();
         lanzarHilos();
-        System.out.println("Tiempo que tardan los hilos" + (new Date().getTime() - tiempoHilos));
+        System.out.println("Tiempo que tardan los hilos =  " + (new Date().getTime() - tiempoHilos));
         
         
   
